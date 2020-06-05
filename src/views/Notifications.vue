@@ -49,11 +49,11 @@
                         <div v-if="form.checkbox" class="form-group">
                         <label for="inputEma2" class="col-sm-2 control-label">Image(optional)</label>
                         <div class="col-sm-10">
-                            <input v-validate="'image'" data-vv-name='image' data-vv-as="image" @change="onFileChanged" type="file" accept="image/*" class="form-control" id="inputEma2" placeholder="Image" >
+                            <input v-validate="'image'" data-vv-name='image' data-vv-as="image" @change="onFileChanged" type="file" accept="image/*" class="form-control" id="inputEma2" placeholder="Image" ref="fileInput">
                             <small class='text-danger'>{{ errors.first('url') }}</small>
                         </div>
                          </div>
-                        
+
                         <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
                             <button type="submit" class="btn btn-primary">Send</button>
@@ -150,6 +150,7 @@ export default {
                 this.$data.form.title = ''
                 this.form.image = null
                 this.errors.clear()
+                this.reset()
                 return
                 // console.log('Sent.:' ,response);
             }).catch((err) => {
@@ -160,6 +161,11 @@ export default {
         onFileChanged (event) {
             this.form.image = event.target.files[0]
         },
+        reset() {
+            const input = this.$refs.fileInput
+            input.type = 'text'
+            input.type = 'file'
+        }
     }
 }
 </script>
