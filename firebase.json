@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "droidconadmin",
+    "site": "droidconadmin20",
     "public": "dist",
     "ignore": [
       "firebase.json",
