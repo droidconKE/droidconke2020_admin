@@ -108,12 +108,12 @@ export default {
                 "notification": {
                     "title": this.$data.form.title,
                     "body": this.$data.form.message,
-                    "icon": "https://droidcon.co.ke/assets/img/about-logo.png",
+                    "icon": "https://droidcon.co.ke/images/icons/apple-icon.png",
                     "click_action": this.$data.form.url
                 },
                 "data": {
                     "title": "droidcon.co.ke",
-                    "body": "droidconKE2020"
+                    "body": "droidconKE2022"
                 },
                 "to": "/topics/"+this.$data.form.topic
                 }

@@ -54,7 +54,7 @@
          <div class="container">
          
             <div class="copy text-center">
-               Copyright 2020 <a target="_blank" href='https://droidcon.co.ke'>droidconKE</a>
+               Copyright 2022 <a target="_blank" href='https://droidcon.co.ke'>droidconKE</a>
             </div>
             
          </div>
