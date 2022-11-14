@@ -11,7 +11,7 @@
     "firebase": "firebase deploy --only hosting:droidconadmin20"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.2",
     "core-js": "^2.6.5",
     "firebase": "^8.2.4",
     "firebase-admin": "^8.2.0",
